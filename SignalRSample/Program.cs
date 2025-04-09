@@ -48,7 +48,7 @@ namespace SignalRSample
                 pattern: "{controller=Home}/{action=Index}/{id?}");
             app.MapRazorPages();
             app.MapHub<UserHub>("/hubs/userCount");
-            app.MapHub<DeathlyHallowsHub>("hubs/deathyhallows");
+            app.MapHub<DeathlyHallowsHub>("/hubs/deathyhallows");
             app.MapHub<HouseGroupHub>("/hubs/houseGroup");
             app.MapHub<NotificationHub>("/hubs/notification");
             app.MapHub<BasicChatHub>("/hubs/basicchat");
