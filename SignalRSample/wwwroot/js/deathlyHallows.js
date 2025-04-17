@@ -5,7 +5,7 @@ var wandSpan = document.getElementById("wandCounter");
 //create connection
 var connectionDeathlyHallows = new signalR.HubConnectionBuilder()
     //.configureLogging(signalR.LogLevel.Information)
-    .withUrl("/hubs/deathyhallows").build();
+    .withUrl("/hubs/deathyHallows").build();
 
 //connect to methods that hub invokes aka receive notfications from hub
 connectionDeathlyHallows.on("updateDealthyHallowCount", (cloak, stone, wand) => {
